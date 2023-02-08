@@ -17,6 +17,7 @@
 
 <body>
     @include('partials.header')
+    @include('partials.jumbo')
 
     <main class="p-3">
         @yield('main-content')

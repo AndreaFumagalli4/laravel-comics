@@ -8,5 +8,14 @@ header {
 }
 
 div.card h5{
-    padding: .5rem;
+    padding: 1rem 0 .5rem;
+}
+
+div.jumbo{
+    height: 300px;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+    }
 }
