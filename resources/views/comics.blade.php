@@ -5,12 +5,12 @@
         <div class="row">
             @foreach ($comics as $comic)
                 <div class="col-3">
-                    <div class="card">
-                        <img src="{{ $comic['thumb'] }}" class="img-fluid" alt="">
+                    <div class="card mb-5 text-center">
+                        <img src="{{ $comic['thumb'] }}" class="img-fluid" alt="Comic thumb">
                         <div class="description">
-                            <h3>
+                            <h5>
                                 {{ $comic['title'] }}
-                            </h3>
+                            </h5>
                             <p>
                                 {{ $comic['series'] }}
                             </p>
