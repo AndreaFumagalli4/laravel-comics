@@ -15,7 +15,7 @@
                                 {{ $comic['series'] }}
                             </p>
                             <p>
-                                {{ $comic['price'] }} &dollar;
+                                {{ $comic['price'] }} 
                             </p>
                         </div>
                     </div>
