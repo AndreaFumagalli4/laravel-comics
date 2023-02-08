@@ -1,26 +1,22 @@
 @extends('layouts.app')
 
 @section('main-content')
-<div class="container">
-    <div class="row">
-        @foreach ($comics as $comic)
-            <div class="col-3">
-                <div class="card mb-5 text-center">
-                    <img src="{{ $comic['thumb'] }}" class="img-fluid" alt="Comic thumb">
-                    <div class="description">
-                        <h5>
-                            {{ $comic['title'] }}
-                        </h5>
-                        <p>
-                            {{ $comic['series'] }}
-                        </p>
-                        <p>
-                            {{ $comic['price'] }} 
-                        </p>
+    <div class="container">
+        <div class="row">
+            @foreach ($comics as $comic)
+                <div class="col-2">
+                    <div class="mb-5 text-center">
+                        <div class="image-container">
+                            <img src="{{ $comic['thumb'] }}" class="img-fluid" alt="Comic thumb">
+                        </div>
+                        <div class="description">
+                            <p>
+                                {{ $comic['series'] }}
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        @endforeach
+            @endforeach
+        </div>
     </div>
-</div>
 @endsection
